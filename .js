@@ -13,15 +13,16 @@ const getComputerChoice = () => {
         computerMove = 'paper'
     }
     
-    console.log(computerMove)
+    return computerMove
 }
 
 const getHumanChoice = () => {
     let humanMove = prompt("Please enter either rock, paper or scissors to play")
-    console.log(humanMove);
-
+    humanMove = humanMove.toLowerCase()
+    return humanMove
 }
 
 
 
-getHumanChoice();
+let humnanScore = 0;
+let computerScore = 0;
